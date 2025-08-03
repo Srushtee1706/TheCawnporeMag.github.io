@@ -25,7 +25,6 @@ body{
       pointer-events: none;
       z-index: 99999999;
       transition: transform 0.1s ease-out;
-
     }
 
 .progress-container {
@@ -155,7 +154,6 @@ nav .fa {
   gap: 16px; 
   justify-content: center; 
   align-items: flex-start;
-  padding: 1rem;
 }
 .card-title {
   color: #262626;
@@ -201,8 +199,7 @@ nav .fa {
   display: block;
   position: relative;
   width: 300px;
-  height: auto;
-  min-height: 416px;
+  height: 400px;
   background-color: rgba(234, 171, 214,0.4);
   border-radius: 10px;
   padding: 2em 1.2em;
@@ -213,15 +210,8 @@ nav .fa {
   background: linear-gradient(to bottom,#cdb2ad,#fdf0d5, #bcaf87);
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: 10px 10px 20px #c6bcc5;
-  max-width: 320px;
 }
-@media (max-width:600px ) {
-  .card{
-    max-width: 90%;
-    padding: 1rem;
-    font-size: 0.95rem;
-  }
-}
+
 .card:before {
   content: '';
   position: absolute;
@@ -250,6 +240,7 @@ nav .fa {
   transition: all 0.5s ease-out;
   color: #ffffff;
 }
+
 
 /* Responsive Design Enhancements */
 @media (max-width: 700px) {
@@ -343,10 +334,6 @@ nav .fa {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     /* max-width: 75ch; */
-}
-
-.issues_btn{
-    height: 10rem;
 }
 
 #issue1-btn {
@@ -674,6 +661,27 @@ button:active{
     display: inline-block;
     animation: dots 1.5s steps(5, end) infinite;
 }
+#music-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffffc0;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+#music-toggle.active {
+  background-color: #f0d9ff;
+  box-shadow: 0 0 10px #be94e5;
+}
+#music-toggle i {
+  font-size: 18px;
+  color: #444;
+}
+
 
 @keyframes dots {
     0% {
@@ -705,4 +713,6 @@ button:active{
         transform: rotate(360deg);
     }
 }
+
+
 
