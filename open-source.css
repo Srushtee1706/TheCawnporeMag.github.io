@@ -79,7 +79,3 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(24px);
 }
-.gssoc-logo:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
