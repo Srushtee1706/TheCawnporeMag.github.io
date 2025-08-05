@@ -429,6 +429,10 @@
     <p>This project is part of <a href="https://github.com/TheCawnporeMag/TheCawnporeMag.github.io" target="_blank">TheCawnporeMag.github.io</a> repository</p>
     <p>We invite developers, designers, and creatives to collaborate in making this space more accessible, interactive, and beautiful</p>
     <p>Licensed under MIT | Maintained with ❤️ by The Cawnpore Magazine Team</p>
+
+
+    <p>&copy; <span id="year"></span> THE CAWNPORE — ALL RIGHTS RESERVED</p>
+
   </div>
 
 
@@ -457,6 +461,7 @@
         observer.observe(item);
       });
     });
+
 // Coordinates for the cursor
 const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
@@ -505,6 +510,12 @@ function animateCircles() {
 
 // Start animation
 animateCircles();
+
+
+
+    // Update the year in the footer
+document.getElementById("year").textContent = new Date().getFullYear();
+
 
   </script>
 </body>
